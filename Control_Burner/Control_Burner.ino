@@ -7,7 +7,6 @@ State Alarm = State(updateAlarm);  // El quemador no se encendió o se apagó
 FSM Burner = FSM(Off); //Se inicializa la FSM en off
 
 // Pre-asignación de pines
-
 #define IgniterRelayPin     2
 #define GasRelayPin       3
 #define CommandPin        4
@@ -19,7 +18,6 @@ FSM Burner = FSM(Off); //Se inicializa la FSM en off
 #define LightingStatusLedPin  10
 
 //Asignacion de estados
-
 #define RelayOn   1
 #define RelayOff  0
 
