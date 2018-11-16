@@ -36,7 +36,7 @@ DF1_configure(&Serial, DF1baud, DF1format, DF1timeout, DF1packets, DF1TOTAL_NO_O
 void loop() {
   DF1_update();
 
-  //wrire N7:1
+  //write N7:1
   int sensorValue = analogRead(A0);
   int outputValue = map(sensorValue, 0, 1023, 0, 32767);
   DF1writeRegs[0] = outputValue;
